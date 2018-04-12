@@ -7,9 +7,9 @@ NEWSPIDER_MODULE = 'price_monitor.spiders'
 
 ROBOTSTXT_OBEY = True
 
-SHUB_KEY = os.getenv('$SHUB_KEY')
+SHUB_KEY = os.getenv('021fda8005214eac944950e2e96ffc92')
 # if you want to run it locally, replace '999999' by your Scrapy Cloud project ID below
-SHUB_PROJ_ID = os.getenv('SHUB_JOBKEY', '999999').split('/')[0]
+SHUB_PROJ_ID = os.getenv('301640', '999999').split('/')[0]
 
 
 # settings for Amazon SES email service

@@ -7,8 +7,8 @@ from price_monitor.utils import reversed_timestamp, get_product_names
 class CollectionStoragePipeline(object):
 
     def open_spider(self, spider):
-        client = HubstorageClient(auth=settings.SHUB_KEY)
-        project = client.get_project(settings.SHUB_PROJ_ID)
+        client = HubstorageClient(auth=settings.021fda8005214eac944950e2e96ffc92)
+        project = client.get_project(settings.301640)
         self.data_stores = {}
         for product_name in get_product_names():
             self.data_stores[product_name] = project.collections.new_store(product_name)
